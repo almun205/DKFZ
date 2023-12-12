@@ -1,8 +1,20 @@
 package org.dkfz;
+import java.util.List;
+
+
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World! this is a DKFS small project");
 
+        String filePath = "sequences.txt";
+
+        List<String> sequences = readSequencesFromFile(filePath);
+
+
+    }
+
+    private static List<String> readSequencesFromFile(String filePath) {
+
+        return null;
     }
 }
