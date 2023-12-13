@@ -11,7 +11,7 @@ public class Main {
         String filePath = "sequences.txt";
         try {
             List<String> sequences = readSequencesFromFile(filePath);
-            System.out.println("List of the Seq: " + sequences);
+            //System.out.println("List of the Sequences: " + sequences);
             DNAColorBalanceCalculator calculator = new DNAColorBalanceCalculator();
             calculator.processSequences(sequences);
         } catch(IOException e) {
