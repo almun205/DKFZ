@@ -6,15 +6,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
-
 public class Main {
     public static void main(String[] args) {
         String filePath = "sequences.txt";
         try {
             List<String> sequences = readSequencesFromFile(filePath);
             System.out.println("List of the Seq: " + sequences);
+            DNAColorBalanceCalculator calculator = new DNAColorBalanceCalculator();
+            calculator.processSequences(sequences);
         } catch(IOException e) {
             e.printStackTrace();
         }
