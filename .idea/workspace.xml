@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207be2da-0dbf-4d63-8114-43854f4fb031" name="Changes" comment="read Sequences from File">
+    <list default="true" id="207be2da-0dbf-4d63-8114-43854f4fb031" name="Changes" comment="Imp processSequences">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DKFZ/org/dkfz/DNAColorBalanceCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DKFZ/org/dkfz/DNAColorBalanceCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DKFZ/org/dkfz/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DKFZ/org/dkfz/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dkfz/DNAColorBalanceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dkfz/DNAColorBalanceCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dkfz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dkfz/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <updated>1702339366458</updated>
       <workItem from="1702339368248" duration="2938000" />
       <workItem from="1702428200644" duration="386000" />
-      <workItem from="1702465112447" duration="10542000" />
+      <workItem from="1702465112447" duration="13011000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -137,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702469462785</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Imp processSequences">
+      <option name="closed" value="true" />
+      <created>1702477371955</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702477371955</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +175,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
     <MESSAGE value="read Sequences from File" />
-    <option name="LAST_COMMIT_MESSAGE" value="read Sequences from File" />
+    <MESSAGE value="Imp processSequences" />
+    <option name="LAST_COMMIT_MESSAGE" value="Imp processSequences" />
   </component>
 </project>
