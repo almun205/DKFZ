@@ -8,12 +8,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String filePath = "sequences.txt";
+        String inputFilePath = "sequences.txt";
+        String OutputFilePath = "output.txt";
         try {
-            List<String> sequences = readSequencesFromFile(filePath);
+            List<String> sequences = readSequencesFromFile(inputFilePath);
             //System.out.println("List of the Sequences: " + sequences);
             DNAColorBalanceCalculator calculator = new DNAColorBalanceCalculator();
-            calculator.processSequences(sequences);
+            calculator.processSequencesAndWriteResultsToFile(sequences, OutputFilePath);
         } catch(IOException e) {
             e.printStackTrace();
         }
@@ -23,11 +24,14 @@ public class Main {
     private static List<String> readSequencesFromFile(String filePath) throws IOException {
         List<String> sequences = new ArrayList<>();
         // read line by line from file & add each line to sequencesList
-        BufferedReader reader = new BufferedReader(new FileReader(filePath));
-        String line;
-        while ((line = reader.readLine()) != null) {
-            sequences.add(line);
-        }
+        //try if the file exists
+       try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+           String line;
+           while ((line = reader.readLine()) != null) {
+               sequences.add(line);
+           }
+       }
         return sequences;
     }
+
 }
