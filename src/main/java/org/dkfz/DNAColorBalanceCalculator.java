@@ -11,7 +11,8 @@ public class DNAColorBalanceCalculator {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath)) ) {
             int MaxLen = findMaxLen(sequences);
 
-
+            // das Output-File als output.txt wird erstellt
+            System.out.println("Es wird auch als Output-File output.txt erstellt");
             // Kopfzeile der Tabelle in Terminal ausgeben
             System.out.println("------------------------");
             System.out.println("| Cycle  | Red  | Green |");
